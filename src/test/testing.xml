@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation-SwagLabs-Suite" verbose="1">
+
+    <test name="Teasting pagina Swang Labs Funcional">
+        <classes>
+
+            <class name="tests.LoginTest" />
+
+            <class name="tests.LoginTestFailed" />
+
+            <class name="tests.CartTest" />
+
+            <class name="tests.E2ETest" />
+
+        </classes>
+    </test>
+
+</suite>
