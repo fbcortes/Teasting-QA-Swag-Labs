@@ -1,3 +1,4 @@
+//Test 2 que busca hacer un login fallido con credenciales de un usuario inválido.
 package tests;
 
 import base.BaseTest;
@@ -14,11 +15,13 @@ public class LoginTestFailed extends BaseTest {
 
         LoginPage loginPage = new LoginPage(driver);
 
+        //Ejecuta la función de login.
         ProductsPage productsPage = loginPage.login(
                 Constants.userInvalid,
                 Constants.password
         );
 
+        //Validación que hemos ingresado el usuario inválido y se identifique el mensaje erróneo.
         String tituloEsperadoError = "Epic sadface: Sorry, this user has been locked out.";
 
         Assert.assertEquals(loginPage.textLoginError(), tituloEsperadoError,

@@ -1,8 +1,8 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
-<suite name="Automation-SwagLabs-Suite" verbose="1">
+<suite name="Automatización de Teasting Funcional Swag Labs" verbose="1">
 
-    <test name="Teasting pagina Swang Labs Funcional">
+    <test name="Desafío Technology">
         <classes>
 
             <class name="tests.LoginTest" />
